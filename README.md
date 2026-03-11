@@ -121,7 +121,7 @@ http://localhost:8000/
 Create database:
 
 ```sql
-CREATE DATABASE assessment;
+CREATE DATABASE atdrive;
 ```
 
 Create users table:
@@ -138,28 +138,28 @@ password VARCHAR(255)
 
 ## Product APIs
 
-POST `/api/products` Create a product
+POST `/api/v1/products` Create a product
 
-GET `/api/products ` Get all products
+GET `/api/v1/products ` Get all products
 
-GET `/api/products/:id` Get product by ID
+GET `/api/v1/products/:id` Get product by ID
 
-PUT `/api/products/:id` Update product
+PUT `/api/v1/products/:id` Update product
 
-DELETE `/api/products/:id` Delete product
+DELETE `/api/v1/products/:id` Delete product
 
 ### User APIs
 
-POST `/api/users/register` Register user
+POST `/api/v1/users/register` Register user
 
-POST `/api/users/login` Login user
+POST `/api/v1/users/login` Login user
 
 ### Order APIs
 
-POST `/api/orders` Create order
+POST `/api/v1/orders` Create order
 
-GET `/api/orders/:id` Get order by ID
+GET `/api/v1/orders/:id` Get order by ID
 
-PUT `/api/orders/:id` Update order
+PUT `/api/v1/orders/:id` Update order
 
-DELETE `/api/orders/:id` Delete order
+DELETE `/api/v1/orders/:id` Delete order
