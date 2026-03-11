@@ -10,8 +10,12 @@ The application demonstrates CRUD operations, multi-database integration, RESTfu
 The project follows **standard coding practices, separation of concerns, and modular architecture** to ensure maintainability and scalability.
 
 ---
-<img width="1344" height="991" alt="Screenshot 2026-03-11 at 23-56-19 frontend" src="https://github.com/user-attachments/assets/ac160ba6-1209-4a0f-82b1-fb11bd08dc86" />
 
+## Application Overview
+
+Shown below is the frontend dashboard of the application, which displays weather data fetched from the Open-Meteo API.
+
+<img width="1344" height="991" alt="Screenshot 2026-03-11 at 23-56-19 frontend" src="https://github.com/user-attachments/assets/ac160ba6-1209-4a0f-82b1-fb11bd08dc86" />
 
 ## Tech Stack
 
