@@ -43,6 +43,18 @@ const getOrder = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, order, 'Order fetched successfully'));
 });
 
+const getAllOrders = asyncHandler(async (req, res) => {
+  const orders = await Order.find();
+
+  if (orders.length === 0 || !orders) {
+    throw new ApiError(404, 'Orders not found !');
+  }
+
+  return res
+    .status(200)
+    .json(new ApiResponse(200, orders, 'Orders fetched successfully'));
+});
+
 const updateOrder = asyncHandler(async (req, res) => {
   const { orderId } = req.params;
   const { userId, productIds, totalAmount } = req.body;
@@ -89,4 +101,5 @@ module.exports = {
   getOrder,
   updateOrder,
   deleteOrder,
+  getAllOrders,
 };
